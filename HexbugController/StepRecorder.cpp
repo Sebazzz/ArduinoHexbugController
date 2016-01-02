@@ -152,7 +152,7 @@ void StepPlayer::play() {
 	while (this->_currentStepTimer.isRunning() && !this->_currentStepTimer.isExpired());
 
 	if (!this->checkStepState()) {
-		this->reset();
+		this->_index = -1;
 	}
 }
 
